@@ -1,0 +1,20 @@
+html, body {
+  margin-left: 2%; margin-right: 2%;
+  padding: 0; height: 100%;
+}
+.signupt1 {
+  width: 60%;
+  /*background: red;*/
+}
+.signup input[type=text], input[type=password], input[type=email], input[type=date], select{
+  width: 400px; height: 40px; font-size: 20px; margin: 0.5%; display: block;
+}
+.signup input[type=checkbox], label {
+  height: 20px; font-size: 20px;
+}
+.signup textarea {
+  width: 400px; height: 150px; font-size: 20px; margin: 0.5%; display: block; resize: none;
+}
+.favoriteinput {
+  width: 10%;
+}

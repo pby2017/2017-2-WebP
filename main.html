@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
     <title>Easy Search</title>
   </head>
   <body>
@@ -18,19 +19,22 @@
     </section>
 
     <aside class="aside">
-      <header class="login">
-        <form class="" action="" method="post">
+      <header class="signin">
+        <form class="" action="" name="signin" method="post" onsubmit="return signincheck()">
           <table>
             <tr>
-              <td rowspan="1" class="idpwtd"><span><input class="idpwinput" type="text" placeholder="아이디"></span></th>
-              <td rowspan="2"><span><input class="idpwsubmit" type="submit" value="확인"></span></th>
-            </tr>
-            <tr>
-              <td rowspan="1" class="idpwtd"><span><input class="idpwinput" type="password" placeholder="비밀번호"></span></td>
+              <td>
+                <span><input class="idpwinput" type="text" name="idmain" placeholder="아이디"></span>
+                <span><input class="idpwinput" type="password" name="pwmain" placeholder="비밀번호"></span>
+              </td>
+              <td><span><input class="idpwsubmit" type="submit" value="확인"></span></td>
             </tr>
           </table>
-          <a href="#">회원가입</a><br>
+          <a href="signup.html">회원가입</a><br>
           <a href="#">아이디/비밀번호 찾기</a>
+        </form>
+        <form class="" action="main.html" name="signout" method="post">
+
         </form>
       </header>
       <footer class="tmpimglogin">

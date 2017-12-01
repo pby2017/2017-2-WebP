@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="signup.css">
+    <script type="text/javascript" src="signup.js"></script>
+    <title>회원가입</title>
+  </head>
+  <body>
+    <form class="signup" action="main.html" name="signup" method="post" onsubmit="return signupcheck()">
+        <table>
+          <tr><input type="text" name="idinput" placeholder="아이디"></tr>
+          <tr><input type="password" name="pwinput" placeholder="비밀번호"></tr>
+          <tr><input type="password" name="pw2input" placeholder="비밀번호확인"></tr>
+          <tr><input type="text" name="nameinput" placeholder="이름"></tr>
+          <tr><input type="text" name="phoneinput" placeholder="전화번호"></tr>
+          <tr><input type="email" name="emailinput" placeholder="이메일"></tr>
+          <tr>
+            <select name="selectgenderinput">
+              <option value="none">성별선택</option>
+              <option value="male">남성</option>
+              <option value="female">여성</option>
+            </select>
+          </tr>
+          <tr><input type="date" name="dateinput" placeholder="생년월일"></tr>
+          <tr>
+            <select name="selectageinput">
+              <option value="none">연령대선택</option>
+              <option value="1">10세 미만</option>
+              <option value="10">10~19세</option>
+              <option value="20">20~29세</option>
+              <option value="30">30~39세</option>
+              <option value="40">40~49세</option>
+              <option value="50">50세 이상</option>
+            </select>
+          </tr>
+          <tr><input type="checkbox" class="favoriteinput" name="html" value="1" id="html"><label for="html">내용</label>
+              <input type="checkbox" class="favoriteinput" name="css" value="2" id="css"><label for="css">내용</label>
+              <input type="checkbox" class="favoriteinput" name="js" value="3" id="js"><label for="js">내용</label>
+          </tr>
+          <tr><textarea name="introinput" placeholder="자기소개"></textarea></tr>
+        </table>
+        <input type="submit" value="가입">
+        <input type="button" value="취소" onclick="signupcancel()">
+      </form>
+  </body>
+</html>
