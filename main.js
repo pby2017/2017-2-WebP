@@ -17,3 +17,8 @@ function signincheck()
     alert("Success");
   }
 }
+
+function cantUse()
+{
+  alert("Sorry. You can not use now.")
+}

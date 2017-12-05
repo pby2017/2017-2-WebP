@@ -1,9 +1,17 @@
+var sameCheckBool = false;
+var checkID = "";
+
 function signupcheck()
 {
   if(document.signup.idinput.value=="")
   {
     alert("input ID");
     document.signup.idinput.focus();
+    return false;
+  }
+  else if(!sameCheckBool || checkID=="" || checkID != document.signup.idinput.value)
+  {
+    alert("click samecheck button");
     return false;
   }
   else if(document.signup.pwinput.value=="")
@@ -48,20 +56,53 @@ function signupcheck()
     document.signup.dateinput.focus();
     return false;
   }
-  else if(document.signup.selectageinput.value=="")
+  else if(document.signup.selectageinput.value=="none")
   {
     alert("select your age");
     document.signup.selectageinput.focus();
     return false;
   }
-  else if(document.signup.html.value=="1")
+
+  if(!document.signup.favoriteinput.checked)
   {
-    alert("good");
-    document.signup.html.focus();
+    var favorinput = document.signup.favoriteinput;
+    var i=0;
+    for(i=0; i<eval(document.signup.favoriteinput.length); i++)
+    {
+      if(favorinput[i].checked == true) break;
+    }
+
+    if(i >= favorinput.length)
+    {
+      alert("check your favorite section");
+      return false;
+    }
+  }
+
+  if(document.signup.introinput.value=="")
+  {
+    alert("input intro");
+    document.signup.introinput.focus();
     return false;
   }
-  else {
-    alert("Success");
+
+  alert("Success");
+  sameCheckBool = false;
+}
+
+function clicksamecheck()
+{
+  if(document.signup.idinput.value!="")
+  {
+    checkID = document.signup.idinput.value;
+    sameCheckBool = true;
+    alert("You can use this ID");
+  }
+  else
+  {
+    alert("input ID");
+    document.signup.idinput.focus();
+    return false;
   }
 }
 
