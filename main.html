@@ -10,12 +10,18 @@
     <header class="header">
     </header>
 
-    <nav class="nav">
-
+    <nav id="navTopMenu">
+      <ul>
+        <li><a class="navmenu" href="startview.html" target="mainview">Home</a></li>
+        <li><a class="navmenu" href="#">Ministries</a></li>
+        <li><a class="navmenu" href="#">Community</a></li>
+        <li><a class="navmenu" href="#" onclick="return searchinput()" id="searchimageanchor" target="_blank">Relax Time</a></li>
+        <li><a class="navmenu" href="https://blog.naver.com/qkrquddyd94" target="mainview">My Blog</a></li>
+      </ul>
     </nav>
 
     <section class="section">
-      <iframe class="view" src="" ></iframe>
+      <iframe class="view" src="startview.html" name="mainview"></iframe>
     </section>
 
     <aside class="aside">
@@ -38,7 +44,7 @@
         </form>
       </header>
       <footer class="tmpimglogin">
-        <img src="http://cafefiles.naver.net/20101218_191/vice1210_1292643986876TwNLz_jpg/21_vice1210.jpg" id="tmpimglogintree" alt="Tree">
+        <img src="http://cafefiles.naver.net/20101218_191/vice1210_1292643986876TwNLz_jpg/21_vice1210.jpg" id="tmpimglogintree" alt="Tree" onmouseover="changetmpimg()" onmouseout="returntmpimg()">
       </footer>
     </aside>
 
