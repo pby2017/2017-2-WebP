@@ -3,48 +3,53 @@
   <head>
     <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="main.css">
-    <script type="text/javascript" src="signup.js"></script>
+    <script type="text/javascript" src="main.js"></script>
     <title>회원가입</title>
   </head>
   <body>
-    <form class="signup" action="main.html" name="signup" method="post" onsubmit="return signupcheck()">
-        <table id="signuptable">
-          <tr><td><input type="text" name="idinput" placeholder="아이디"></td><td><input type="button" name="samecheck" onclick="clicksamecheck()" value="중복체크"></td></tr>
-          <tr><td><input type="password" name="pwinput" placeholder="비밀번호"></td></tr>
-          <tr><td><input type="password" name="pw2input" placeholder="비밀번호확인"></td></tr>
-          <tr><td><input type="text" name="nameinput" placeholder="이름"></td></tr>
-          <tr><td><input type="text" name="phoneinput" placeholder="전화번호"></td></tr>
-          <tr><td><input type="email" name="emailinput" placeholder="이메일"></td></tr>
-          <tr><td>
-            <select name="selectgenderinput">
-              <option value="none">성별선택</option>
-              <option value="male">남성</option>
-              <option value="female">여성</option>
-            </select>
-          </td></tr>
-          <tr><td><input type="date" name="dateinput" placeholder="생년월일"></td></tr>
-          <tr><td>
-            <select name="selectageinput">
-              <option value="none">연령대선택</option>
-              <option value="1">10세 미만</option>
-              <option value="10">10~19세</option>
-              <option value="20">20~29세</option>
-              <option value="30">30~39세</option>
-              <option value="40">40~49세</option>
-              <option value="50">50세 이상</option>
-            </select>
-          </td></tr>
-          <tr><td><input type="checkbox" id="favoriteinput" name="favoriteinput" value="html"><label for="favoriteinput">HTML</label>
-              <input type="checkbox" id="favoriteinput" name="favoriteinput" value="css"><label for="favoriteinput">CSS</label>
-              <input type="checkbox" id="favoriteinput" name="favoriteinput" value="js"><label for="favoriteinput">JS</label>
-              <input type="checkbox" id="favoriteinput" name="favoriteinput" value="3"><label for="favoriteinput">기타</label>
-          </td></tr>
-          <tr><td><textarea name="introinput" placeholder="자기소개"></textarea></td></tr>
-          <tr>
-            <td><input type="submit" value="가입"><input type="button" value="취소" onclick="signupcancel()"></td>
-          </tr>
-        </table>
+    <header class="header">
+      <a href="javascript:gotomainhtml()" id="mainlogo">PLAY GROUND</a>
+    </header>
 
-      </form>
+    <section class="signinsection">
+      <form class="signup" action="main.html" name="signup" method="post" onsubmit="return signupcheck()">
+          <table id="signuptable">
+            <tr><td><input type="text" name="idinput" placeholder="아이디"></td><td><input type="button" name="samecheck" onclick="clicksamecheck()" value="중복체크"></td></tr>
+            <tr><td><input type="password" name="pwinput" placeholder="비밀번호"></td></tr>
+            <tr><td><input type="password" name="pw2input" placeholder="비밀번호확인"></td></tr>
+            <tr><td><input type="text" name="nameinput" placeholder="이름"></td></tr>
+            <tr><td><input type="text" name="phoneinput" placeholder="전화번호"></td></tr>
+            <tr><td><input type="email" name="emailinput" placeholder="이메일"></td></tr>
+            <tr><td>
+              <select name="selectgenderinput">
+                <option value="none">성별선택</option>
+                <option value="male">남성</option>
+                <option value="female">여성</option>
+              </select>
+            </td></tr>
+            <tr><td><input type="date" name="dateinput" placeholder="생년월일"></td></tr>
+            <tr><td>
+              <select name="selectageinput">
+                <option value="none">연령대선택</option>
+                <option value="1">10세 미만</option>
+                <option value="10">10~19세</option>
+                <option value="20">20~29세</option>
+                <option value="30">30~39세</option>
+                <option value="40">40~49세</option>
+                <option value="50">50세 이상</option>
+              </select>
+            </td></tr>
+            <tr><td><input type="checkbox" id="favoriteinput" name="favoriteinput" value="html"><label for="favoriteinput">HTML</label>
+                <input type="checkbox" id="favoriteinput" name="favoriteinput" value="css"><label for="favoriteinput">CSS</label>
+                <input type="checkbox" id="favoriteinput" name="favoriteinput" value="js"><label for="favoriteinput">JS</label>
+                <input type="checkbox" id="favoriteinput" name="favoriteinput" value="3"><label for="favoriteinput">기타</label>
+            </td></tr>
+            <tr><td><textarea name="introinput" placeholder="자기소개"></textarea></td></tr>
+            <tr>
+              <td><input type="submit" value="가입"><input type="button" value="취소" onclick="gotomainhtml()"></td>
+            </tr>
+          </table>
+        </form>
+    </section>
   </body>
 </html>

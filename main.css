@@ -7,8 +7,11 @@ body {
   padding: 0; margin: 0; height: 100%; width: 100%;
 }
 .header {
-  width: 100%; height: 15%;
+  width: 100%; height: 15%; text-align: center;
   /*background: skyblue;*/
+}
+.header #mainlogo {
+  height: 15%;
 }
 .navTopMenu {
   width: 100%; height: 5%;
@@ -81,7 +84,7 @@ body {
   width: 100%; height: 50%; margin: auto;
 }
 .signup #signuptable {
-  height: 100%; margin: auto; margin-top: 5%; margin-bottom: 5%;
+  height: 100%; margin: auto;
 }
 .signup input[type=text], .signup input[type=password], .signup input[type=email], .signup input[type=date], .signup select{
   /*width: 400px; height: 40px;*/
