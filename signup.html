@@ -2,13 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link type="text/css" rel="stylesheet" href="signup.css">
+    <link type="text/css" rel="stylesheet" href="main.css">
     <script type="text/javascript" src="signup.js"></script>
     <title>회원가입</title>
   </head>
   <body>
     <form class="signup" action="main.html" name="signup" method="post" onsubmit="return signupcheck()">
-        <table>
+        <table id="signuptable">
           <tr><td><input type="text" name="idinput" placeholder="아이디"></td><td><input type="button" name="samecheck" onclick="clicksamecheck()" value="중복체크"></td></tr>
           <tr><td><input type="password" name="pwinput" placeholder="비밀번호"></td></tr>
           <tr><td><input type="password" name="pw2input" placeholder="비밀번호확인"></td></tr>
@@ -34,15 +34,17 @@
               <option value="50">50세 이상</option>
             </select>
           </td></tr>
-          <tr><td><input type="checkbox" class="favoriteinput" name="favoriteinput" value="html"><label for="favoriteinput">HTML</label>
-              <input type="checkbox" class="favoriteinput" name="favoriteinput" value="css"><label for="favoriteinput">CSS</label>
-              <input type="checkbox" class="favoriteinput" name="favoriteinput" value="js"><label for="favoriteinput">JS</label>
-              <input type="checkbox" class="favoriteinput" name="favoriteinput" value="3"><label for="favoriteinput">기타</label>
+          <tr><td><input type="checkbox" id="favoriteinput" name="favoriteinput" value="html"><label for="favoriteinput">HTML</label>
+              <input type="checkbox" id="favoriteinput" name="favoriteinput" value="css"><label for="favoriteinput">CSS</label>
+              <input type="checkbox" id="favoriteinput" name="favoriteinput" value="js"><label for="favoriteinput">JS</label>
+              <input type="checkbox" id="favoriteinput" name="favoriteinput" value="3"><label for="favoriteinput">기타</label>
           </td></tr>
           <tr><td><textarea name="introinput" placeholder="자기소개"></textarea></td></tr>
+          <tr>
+            <td><input type="submit" value="가입"><input type="button" value="취소" onclick="signupcancel()"></td>
+          </tr>
         </table>
-        <input type="submit" value="가입">
-        <input type="button" value="취소" onclick="signupcancel()">
+
       </form>
   </body>
 </html>

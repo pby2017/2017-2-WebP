@@ -2,32 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link type="text/css" rel="stylesheet" href="signin.css">
-    <title>회원가입</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
+    <title>로그인</title>
   </head>
   <body>
-    <form class="signin" action="" method="post">
-        <table>
-          <tr><input type="text" placeholder="아이디"></tr>
-          <tr><input type="password" placeholder="비밀번호"></tr>
-          <tr><input type="password" placeholder="비밀번호확인"></tr>
-          <tr><input type="text" placeholder="이름"></tr>
-          <tr><input type="text" placeholder="전화번호"></tr>
-          <tr><input type="email" placeholder="이메일"></tr>
+    <header class="header">
+    </header>
+
+    <section class="signinsection">
+      <form class="signin" action="main.html" name="signin" method="post" onsubmit="return signincheck()">
+        <table id="signintable">
           <tr>
-            <select>
-              <option value="none">성별선택</option>
-              <option value="male">남성</option>
-              <option value="female">여성</option>
-            </select>
+            <td>
+              <span><input id="idpwinput" type="text" name="idmain" placeholder="아이디"></span>
+              <span><input id="idpwinput" type="password" name="pwmain" placeholder="비밀번호"></span>
+            </td>
+            <td><span><input id="idpwsubmit" type="submit" value="확인"></span></td>
           </tr>
-          <tr><input type="date" placeholder="생년월일"></tr>
-          <tr><input type="text" placeholder="연락처"></tr>
-          <tr><input type="text" placeholder="관심분야"></tr>
-          <tr><textarea placeholder="자기소개"></textarea></tr>
+          <tr>
+            <td>
+              <input type="button" name="" value="Sign Up" onclick="signupbutton()">
+              <input type="button" name="" value="Find ID/PW" onclick="cantUse()">
+            </td>
+          </tr>
         </table>
-        <input type="submit" value="가입">
-        <input type="button" value="취소">
       </form>
+    </section>
+
   </body>
 </html>

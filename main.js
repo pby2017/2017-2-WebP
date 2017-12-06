@@ -45,3 +45,13 @@ function returntmpimg()
   var tmpimglogintree = document.getElementById('tmpimglogintree');
   tmpimglogintree.src="http://cafefiles.naver.net/20101218_191/vice1210_1292643986876TwNLz_jpg/21_vice1210.jpg";
 }
+
+function signinbutton()
+{
+  location.href="signin.html";
+}
+
+function signupbutton()
+{
+  location.href="signup.html";
+}

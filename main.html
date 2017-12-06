@@ -10,47 +10,32 @@
     <header class="header">
     </header>
 
-    <nav id="navTopMenu">
+    <nav class="navTopMenu">
       <ul>
-        <li><a class="navmenu" href="startview.html" target="mainview">Home</a></li>
-        <li><a class="navmenu" href="#">Ministries</a></li>
-        <li><a class="navmenu" href="#">Community</a></li>
-        <li><a class="navmenu" href="#" onclick="return searchinput()" id="searchimageanchor" target="_blank">Relax Time</a></li>
-        <li><a class="navmenu" href="https://blog.naver.com/qkrquddyd94" target="mainview">My Blog</a></li>
+        <li><a id="navmenu" href="startview.html" target="mainview">Home</a></li>
+        <li><a id="navmenu" href="#">Ministries</a></li>
+        <li><a id="navmenu" href="#">Community</a></li>
+        <li><a id="navmenu" href="#" onclick="return searchinput()" id="searchimageanchor" target="_blank">Relax Time</a></li>
+        <li><a id="navmenu" href="https://blog.naver.com/qkrquddyd94" target="mainview">My Blog</a></li>
       </ul>
     </nav>
 
     <section class="section">
-      <iframe class="view" src="startview.html" name="mainview"></iframe>
+      <iframe id="view" src="startview.html" name="mainview"></iframe>
     </section>
 
     <aside class="aside">
-      <header class="signin">
-        <form class="" action="" name="signin" method="post" onsubmit="return signincheck()">
-          <table>
-            <tr>
-              <td>
-                <span><input class="idpwinput" type="text" name="idmain" placeholder="아이디"></span>
-                <span><input class="idpwinput" type="password" name="pwmain" placeholder="비밀번호"></span>
-              </td>
-              <td><span><input class="idpwsubmit" type="submit" value="확인"></span></td>
-            </tr>
-          </table>
-          <a href="signup.html">회원가입</a><br>
-          <a href="javascript:cantUse()">아이디/비밀번호 찾기</a>
-        </form>
-        <form class="" action="main.html" name="signout" method="post">
-
-        </form>
+      <header id="login">
+        <input type="button" value="Sign In" onclick="signinbutton()">
+        <input type="button" value="Sign Up" onclick="signupbutton()">
       </header>
-      <footer class="tmpimglogin">
+      <footer id="tmpimglogin">
         <img src="http://cafefiles.naver.net/20101218_191/vice1210_1292643986876TwNLz_jpg/21_vice1210.jpg" id="tmpimglogintree" alt="Tree" onmouseover="changetmpimg()" onmouseout="returntmpimg()">
       </footer>
     </aside>
 
     <footer class="footer">
-
+      <p align="center" display="inlineblock">CopyRight : qkrquddyd94@naver.com</p>
     </footer>
-
   </body>
 </html>

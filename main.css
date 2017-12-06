@@ -1,37 +1,39 @@
-html, body {
-  /*margin-left: 2%; margin-right: 2%;*/
+html {
   padding: 0; margin: 0; height: 100%;
   background-image: url(https://skisantafe.com/wp-content/uploads/2014/06/snowvista1-1845x740.png);
   background-size: 100% 100%; background-repeat: no-repeat;
+}
+body {
+  padding: 0; margin: 0; height: 100%; width: 100%;
 }
 .header {
   width: 100%; height: 15%;
   /*background: skyblue;*/
 }
-#navTopMenu {
+.navTopMenu {
   width: 100%; height: 5%;
   background: lawngreen;
 }
-#navTopMenu ul {
+.navTopMenu ul {
   margin: 0; padding: 0; height: 100%; width: 100%;
 }
-#navTopMenu ul li {
+.navTopMenu ul li {
   list-style: none; color: white; background-color: red; height: 100%; width: 20%;
   float: left; line-height: 100%; vertical-align: middle;
   text-align: center;
 }
-#navTopMenu .navmenu {
+.navTopMenu #navmenu {
   text-decoration: none; color: white; display: block; height: 100%;
   width: 100%; font-size: auto; font-weight: bold;
 }
-#navTopMenu .navmenu:hover {
+.navTopMenu #navmenu:hover {
   background-color: lawngreen;
 }
 .section {
   width: 80%; height: 75%; float: left;
   /*background: olivedrab;*/
 }
-.view {
+.section #view {
   width: 100%; height: 100%; border: none; float:
   /*background: black;*/
 }
@@ -39,20 +41,12 @@ html, body {
   width: 20%; height: 75%; float: left;
   /*background: yellow;*/
 }
-.signin {
-  width: 100%; height: 25%; background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Feathery_Snow_Crystals_%282217830221%29.jpg/220px-Feathery_Snow_Crystals_%282217830221%29.jpg");
+.aside #login {
+  width: 100%; height: 25%;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Feathery_Snow_Crystals_%282217830221%29.jpg/220px-Feathery_Snow_Crystals_%282217830221%29.jpg");
   /*background: red;*/
 }
-.idpwinput {
-  width: 100%;
-}
-.idpwsubmit {
-  height: 50px;
-}
-.signin a {
-  text-decoration: none; color: gray; background-color: white;
-}
-.tmpimglogin {
+.aside #tmpimglogin {
   width: 100%; height: 75%;
   /*background: blue;*/
 }
@@ -61,4 +55,46 @@ html, body {
 }
 .footer {
   width: 100%; height: 5%; clear: both;
+}
+
+.signinsection {
+  width: 100%; height: 75%; float: left;
+  /*background: olivedrab;*/
+}
+.signin {
+  width: 100%; height: 10%; margin: auto;
+}
+.signin #signintable {
+  margin: auto; margin-top: 5%; margin-bottom: 5%;
+}
+.signin #idpwinput {
+  width: 100%;
+}
+.signin #idpwsubmit {
+  height: 50px;
+}
+.signin input[type=button] {
+  text-decoration: none; color: gray; background-color: white;
+}
+
+.signup {
+  width: 100%; height: 50%; margin: auto;
+}
+.signup #signuptable {
+  height: 100%; margin: auto; margin-top: 5%; margin-bottom: 5%;
+}
+.signup input[type=text], .signup input[type=password], .signup input[type=email], .signup input[type=date], .signup select{
+  /*width: 400px; height: 40px;*/
+  width: 100%; height: 100%;
+  border: none;
+  font-size: 100%; margin: 0.5%; display: block;
+}
+.signup input[type=checkbox], label {
+  height: 20px; font-size: 100%; background-color: white;
+}
+.signup textarea {
+  width: 400px; height: 150px; font-size: 20px; margin: 0.5%; display: block; resize: none;
+}
+.signup #favoriteinput {
+  width: 4%;
 }
