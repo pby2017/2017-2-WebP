@@ -5,6 +5,9 @@ function init()
 {
   var mainlogo = document.getElementById('mainlogo');
   mainlogo.src="http://photovil.hani.co.kr/files/attach/images/83/858/147/%EC%82%AC%EC%A7%84%20101-129.jpg";
+
+  var tmpimglogintree = document.getElementById('tmpimglogintree');
+  tmpimglogintree.src="http://cafefiles.naver.net/20101218_191/vice1210_1292643986876TwNLz_jpg/21_vice1210.jpg";
 }
 
 function signincheck()
@@ -190,4 +193,22 @@ function gotomainhtml()
 function gotosigninhtml()
 {
   location.href="signin.html";
+}
+
+function showstartview()
+{
+  var startviewanchor = document.getElementById('startviewanchor');
+  startviewanchor.href = "startview.html";
+}
+
+function showgamesitelistview()
+{
+  var gamesitelistanchor = document.getElementById('gamesitelistanchor');
+  gamesitelistanchor.href = "gamesitelist.html";
+}
+
+function showblogview()
+{
+  var startviewanchor = document.getElementById('blogviewanchor');
+  startviewanchor.href = "https://blog.naver.com/qkrquddyd94";
 }
