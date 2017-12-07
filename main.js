@@ -1,3 +1,9 @@
+function init()
+{
+  var mainlogo = document.getElementById('mainlogo');
+  mainlogo.src="http://photovil.hani.co.kr/files/attach/images/83/858/147/%EC%82%AC%EC%A7%84%20101-129.jpg";
+}
+
 function signincheck()
 {
   if(document.signin.idmain.value=="")
