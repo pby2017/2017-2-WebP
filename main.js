@@ -66,12 +66,12 @@ function signinbutton()
 
 function realtime()
 {
-  setInterval(function () {
-    var realtime = new Date();
-    var hour = realtime.getHours();
-    document.write(hour);
-    console.log(hour);
-  }, 1000);
+  var realtime = new Date();
+  var hours = realtime.getHours();
+  var minutes = realtime.getMinutes();
+  var seconds = realtime.getSeconds();
+  var writetime = hours+"시 "+minutes+"분 "+seconds+"초";
+  return writetime;
 }
 
 function signupbutton()
@@ -206,12 +206,22 @@ function hidestartviewimg()
   var startviewimg = document.getElementById('startviewimg');
   startviewimg.src="";
   startviewimg.alt="";
+  var realtimeview = document.getElementById('realtimeview');
+  setInterval(function(){
+    realtimeview.innerHTML = realtime()
+  }, 1000);
 }
 
 function showgamesitelistview()
 {
   var gamesitelistanchor = document.getElementById('gamesitelistanchor');
   gamesitelistanchor.href = "gamesitelist.html";
+}
+
+function showpssitelistview()
+{
+  var pssitelistanchor = document.getElementById('pssitelistanchor');
+  pssitelistanchor.href = "pssitelist.html";
 }
 
 function showmyblogview()
