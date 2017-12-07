@@ -1,3 +1,6 @@
+var checkID="";
+var sameCheckBool=false;
+
 function init()
 {
   var mainlogo = document.getElementById('mainlogo');
@@ -21,6 +24,7 @@ function signincheck()
   else
   {
     alert("Success");
+    window.href="main.html";
   }
 }
 
@@ -158,6 +162,7 @@ function signupcheck()
   }
 
   alert("Success");
+  window.href="signin.html";
   sameCheckBool = false;
 }
 
@@ -180,4 +185,9 @@ function clicksamecheck()
 function gotomainhtml()
 {
   location.href="main.html";
+}
+
+function gotosigninhtml()
+{
+  location.href="signin.html";
 }
