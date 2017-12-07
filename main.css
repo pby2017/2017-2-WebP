@@ -3,38 +3,53 @@ html {
   background-image: url(https://skisantafe.com/wp-content/uploads/2014/06/snowvista1-1845x740.png);
   background-size: 100% 100%; background-repeat: no-repeat;
 }
+/*내부패딩 및 바깥마진은 모두 0, 높이는 100%.
+배경에 사진을 포함.
+배경 사진 사이즈는 최대, 반복 없음.*/
 body {
   padding: 0; margin: 0; width: 100%; height: 100%;
 }
+/*내부패딩 및 바깥마진은 모두 0, 너비 및 높이는 100%.*/
 .header {
   width: 100%; height: 15%; text-align: center;
   /*background: skyblue;*/
 }
+/*로고가 들어갈 곳으로 너비는 100%, 높이는 전체 높이의 15% 차지. 내부 내용은 가운데 정렬.*/
 .header #mainlogo {
   width: 50%; height: 100%;
 }
+/*로고 이미지의 너비는 50%, 높이는 .header와 같게 100%.*/
 .header #mainlogo:hover {
   cursor: pointer;
 }
+/*로고 이미지에 마우스 올리면 포인터로 바뀜.*/
 .navTopMenu {
   width: 100%; height: 5%;
   background: lawngreen;
 }
+/*메뉴가 들어갈 곳으로 너비는 100%, 높이는 전체 높이의 5% 차지. 내부 배경색은 lawngreen.*/
 .navTopMenu ul {
   margin: 0; padding: 0; height: 100%; width: 100%;
 }
+/*바깥마진 및 내부패딩은 모두 0, 너비 및 높이는 .navTopMenu와 같게 100%.*/
 .navTopMenu ul li {
   list-style: none; color: white; background-color: red; height: 100%; width: 20%;
-  float: left; line-height: 100%; vertical-align: middle;
+  float: left; line-height: 170%; vertical-align: middle;
   text-align: center;
 }
+/*리스트의 점 속성을 없애고, 글자색은 white. 배경색은 red, 높이는 .navTopMenu와 같게 100%, 각 항목의 너비는 전체의 20%.
+왼쪽을 기준으로 하고, 글자의 라인 높이를 170%만큼 내림, 각 글자의 중심을 맞춤.
+글자는 가운데 정렬.*/
 .navTopMenu a {
   text-decoration: none; color: white; display: block; height: 100%;
   width: 100%; font-size: auto; font-weight: bold;
 }
+/*anchor태그의 밑줄 없애고 글자는 white. block으로 취급함. 높이는 최대 100%.
+너비도 최대 100%. 글자 크기는 .navTopMenu에 맞게, 글자는 강조*/
 .navTopMenu a:hover {
   background-color: lawngreen;
 }
+
 .section {
   width: 80%; height: 75%; float: left;
   /*background: olivedrab;*/

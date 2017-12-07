@@ -4,15 +4,20 @@
     <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="main.css">
     <script type="text/javascript" src="main.js"></script>
+    <!-- 자바스크립트 파일 불러오기 -->
     <title>Easy Search</title>
   </head>
   <body onload="init()">
+    <!-- body 태그를 불러오면서 init() 함수 실행 -->
     <header class="header">
       <img id="mainlogo" onclick="gotomainhtml()" src="" alt="로고">
+      <!-- 로고. 누르면 메인화면으로 이동 -->
     </header>
 
     <nav class="navTopMenu">
+      <!-- 메뉴. 누르면 각 기능 실행 -->
       <ul>
+        <!-- 메인보기, 게임사이트목록, 알고리즘사이트목록, 구글이미지검색, 내블로그 -->
         <li><a href="" onclick="return showstartview()" id="startviewanchor" target="mainview">Home</a></li>
         <li><a href="" onclick="return showgamesitelistview()" id="gamesitelistanchor" target="mainview">Play Game</a></li>
         <li><a href="" onclick="return showpssitelistview()" id="pssitelistanchor" target="mainview">Problem Solving</a></li>
@@ -23,19 +28,23 @@
 
     <section class="section">
       <iframe id="view" src="startview.html" name="mainview"></iframe>
+      <!-- 메뉴의 화면을 보여줄 iframe으로써, 가장 처음에는 메인화면 표시 -->
     </section>
 
     <aside class="aside">
       <header id="login">
         <input type="button" id="loginsigninbutton" value="Sign In" onclick="signinbutton()">
+        <!-- 로그인 화면으로 이동하는 버튼 -->
       </header>
       <footer id="tmpimglogin">
         <img src="" id="tmpimglogintree" alt="Tree" onmouseover="changetmpimg()" onmouseout="returntmpimg()">
+        <!-- 임시 공간을 사진으로 채움 -->
       </footer>
     </aside>
 
     <footer class="footer">
       <p align="center" display="inlineblock">CopyRight : qkrquddyd94@naver.com</p>
+      <!-- 하단에 저작자 표시 -->
     </footer>
   </body>
 </html>
