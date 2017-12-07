@@ -1,0 +1,29 @@
+body {
+  text-align: right;
+}
+.tablediv a {
+  text-decoration: none;
+}
+.tablediv #tableiniframe {
+  display: inline-block;
+}
+.tablediv #tableiniframe a {
+  text-decoration: none;
+}
+.tablediv #tableiniframe th {
+  text-align: center;
+}
+.tablediv #tableiniframe td {
+  text-align: center;
+}
+.tablediv #tableiniframe span {
+  text-decoration: none;
+  color : yellow;
+	text-shadow : 2px 2px 2px black,
+					0 0 25px blue, 0 0 5px darkblue;
+}
+.tablediv #tableiniframe a:hover {
+  color : yellow;
+	text-shadow : 2px 2px 2px black,
+					0 0 25px blue, 0 0 5px darkblue;
+}

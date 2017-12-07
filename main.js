@@ -201,14 +201,21 @@ function showstartview()
   startviewanchor.href = "startview.html";
 }
 
+function hidestartviewimg()
+{
+  var startviewimg = document.getElementById('startviewimg');
+  startviewimg.src="";
+  startviewimg.alt="";
+}
+
 function showgamesitelistview()
 {
   var gamesitelistanchor = document.getElementById('gamesitelistanchor');
   gamesitelistanchor.href = "gamesitelist.html";
 }
 
-function showblogview()
+function showmyblogview()
 {
-  var startviewanchor = document.getElementById('blogviewanchor');
-  startviewanchor.href = "https://blog.naver.com/qkrquddyd94";
+  var mybloganchor = document.getElementById('mybloganchor');
+  mybloganchor.href = "https://blog.naver.com/qkrquddyd94";
 }
