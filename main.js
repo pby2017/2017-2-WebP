@@ -32,7 +32,7 @@ function searchinput()
   }
   var getidsearchanchor = document.getElementById('searchimageanchor');
   getidsearchanchor.href="https://www.google.co.kr/search?q="+searchtext+"&dcr=0&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiIxN6FrvPXAhWIErwKHYe3DdUQ_AUICigB&biw=1366&bih=637";
-}
+} // 태그의 id값이 겹쳐서 get id에서 null 반환되는 문제 있었음.
 
 function changetmpimg()
 {
@@ -49,6 +49,16 @@ function returntmpimg()
 function signinbutton()
 {
   location.href="signin.html";
+}
+
+function realtime()
+{
+  setInterval(function () {
+    var realtime = new Date();
+    var hour = realtime.getHours();
+    document.write(hour);
+    console.log(hour);
+  }, 1000);
 }
 
 function signupbutton()
