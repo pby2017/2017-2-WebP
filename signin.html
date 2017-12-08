@@ -7,11 +7,13 @@
     <title>로그인</title>
   </head>
   <body onload="init()">
+    <!-- sign in 페이지. 로고 이미지 로드를 위해 init() 설정 -->
     <header class="header">
       <img id="mainlogo" onclick="gotomainhtml()" src="" alt="로고">
     </header>
 
     <section class="signinsection">
+      <!-- sign in 양식 -->
       <form class="signin" action="javascript:gotomainhtml()" name="signin" method="post" onsubmit="return signincheck()">
         <table id="signintable">
           <tr>

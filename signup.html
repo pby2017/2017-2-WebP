@@ -7,11 +7,13 @@
     <title>회원가입</title>
   </head>
   <body onload="init()">
+    <!-- sign up 페이지. 로고 이미지 로드를 위해 init() 설정 -->
     <header class="header">
       <img id="mainlogo" onclick="gotomainhtml()" src="" alt="로고">
     </header>
 
     <section class="signinsection">
+      <!-- sign up 양식 -->
       <form class="signup" action="javascript:gotosigninhtml()" name="signup" method="post" onsubmit="return signupcheck()">
           <table id="signuptable">
             <tr><td><input type="text" name="idinput" placeholder="아이디"></td><td><input type="button" name="samecheck" onclick="clicksamecheck()" value="중복체크"></td></tr>

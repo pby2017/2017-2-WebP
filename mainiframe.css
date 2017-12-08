@@ -1,34 +1,50 @@
 body {
   text-align: right;
 }
-#startviewimg:hover {
-  cursor: pointer;
-}
+/*내용은 우측 정렬.*/
 .tablediv a {
   text-decoration: none;
 }
+/*anchor 태그의 데코 제거*/
 .tablediv #tableiniframe {
   display: inline-block;
 }
+/*테이블끼리 수평으로 놓이게 inline-block 설정*/
 .tablediv #tableiniframe a {
   text-decoration: none;
 }
+/*anchor 태그의 데코 제거*/
 .tablediv #tableiniframe th {
   text-align: center;
 }
+/*테이블 제목 가운데 정렬*/
 .tablediv #tableiniframe td {
   text-align: center;
 }
+/*테이블 내용 가운데 정렬*/
 .tablediv #tableiniframe span {
   text-decoration: none;
   color : yellow;
 	text-shadow : 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
+/*테이블 내 설명 스타일 설정. 데코없애고, 색은 yellow. 그림자 효과 줌.*/
 .tablediv span {
   color : white;
 	text-shadow : 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
+/*테이블 밖 유의사항 스타일 설정. 색은 white. 그림자 효과 줌.*/
 .tablediv #tableiniframe a:hover {
   color : yellow;
 	text-shadow : 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
+/*테이블 내 링크에 마우스 커서 올라갔을 때 스타일 설정. 데코없애고, 색은 yellow. 그림자 효과 줌.*/
+/*COMMON.
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------*/
+#startviewimg:hover {
+  cursor: pointer;
+}
+/*시작화면에 마우스 커서를 올리면 pointer로 변환.*/
+/*startview.html.
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------*/
