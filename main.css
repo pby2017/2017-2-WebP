@@ -45,84 +45,114 @@ body {
   width: 100%; font-size: auto; font-weight: bold;
 }
 /*anchor태그의 밑줄 없애고 글자는 white. block으로 취급함. 높이는 최대 100%.
-너비도 최대 100%. 글자 크기는 .navTopMenu에 맞게, 글자는 강조*/
+너비도 최대 100%. 글자 크기는 .navTopMenu에 맞게, 글자는 강조.*/
 .navTopMenu a:hover {
   background-color: lawngreen;
 }
-
+/*메뉴에 마우스 커서 올려놓으면 색 lawngreen으로 변환.*/
 .section {
   width: 80%; height: 75%; float: left;
   /*background: olivedrab;*/
 }
+/*화면이 출력될 부분으로 너비는 80%, 높이는 전체 높이의 75%. 내용만큼만 차지하고 왼쪽에 위치하도록 함.*/
 .section #view {
   width: 100%; height: 100%; border: none; align-content: right;
   /*background: black;*/
 }
+/*iframe으로 구성하였고, 너비와 높이는 부모 화면 .section과 동일하게 유지. 테두리는 없애고 내용은 오른쪽 정렬.*/
 .aside {
   width: 20%; height: 75%; float: left;
   /*background: yellow;*/
 }
+/*로그인버튼과 로그인버튼 구간 아래 이미지를 담는 부분으로 너비는 .section의 부분을 제외한 20%, 높이는 전체 높이의 75%. 내용만큼만 차지하고 왼쪽에 위치하도록 함.*/
 .aside #login {
   width: 100%; height: 25%;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Feathery_Snow_Crystals_%282217830221%29.jpg/220px-Feathery_Snow_Crystals_%282217830221%29.jpg");
   background-size: 100% 100%; background-repeat: no-repeat;
   /*background: red;*/
 }
+/*로그인버튼이 위치한 부분으로 너비는 부모 .aside와 동일, 높이는 로그인버튼 아래 이미지 높이를 제외한 25%.
+배경 이미지가 있고, 사이즈는 전체 채움. 이미지 반복은 없음.*/
 input[type=button]:hover, input[type=submit]:hover {
   cursor: pointer;
 }
+/*버튼타입이나 전송타입의 input태그에 커서가 올라가면 pointer로 변환.*/
 .aside #loginsigninbutton {
   height: 30%; width: 100%;
 }
+/*로그인버튼의 높이는 30%, 너비는 100%.*/
 .aside #tmpimglogin {
   width: 100%; height: 75%;
   /*background: blue;*/
 }
+/*로그인버튼 아래 이미지 부분의 너비는 100%, 높이는 로그인 버튼 부분의 높이를 제외한 75%.*/
 .aside #tmpimglogintree {
   height: 100%; width: 100%;
 }
+/*로그인버튼 아래 이미지의 높이와 너비는 부모 부분인 tmpimglogin과 동일하게 100%.*/
 .footer {
   width: 100%; height: 5%; clear: both;
 }
-
+/*페에지의 바닥부분으로 너비는 100%, 높이는 전체 높이의 5%. 좌우 float 속성 해제.*/
+/*main.html
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------*/
 .signinsection {
   width: 100%; height: 75%; float: left;
   /*background: olivedrab;*/
 }
+/*signin.html의 css 시작부분으로 로그인 화면의 위치를 조정. 너비는 100%, 높이는 전체 높이의 75%.*/
 .signin {
   width: 100%; height: 10%; margin: auto;
 }
+/*로그인의 form태그 부분으로 너비는 100%, 높이는 10%, 마진은 좌우 1:1 균등분배.*/
 .signin #signintable {
   margin: auto; margin-top: 5%; margin-bottom: 5%;
 }
+/*아이디 및 비밀번호 입력 input 태그를 포함하는 table 태그 부분으로 좌우 마진은 1:1 균등분배, 상하 마진은 5%.*/
 .signin #idpwinput {
   width: 100%;
 }
+/*아이디 및 비밀번호 입력 input의 너비는 100%.*/
 .signin #idpwsubmit {
   height: 50px;
 }
+/*전송 input의 높이는 아이디와 비밀번호 창의 합과 동일하게 50px.*/
 .signin input[type=button] {
   text-decoration: none; color: gray; background-color: white;
 }
-
+/*button 타입의 input 즉, signup과 find 전송 input의 테두리 없애고 글자색은 gray, 배경색은 white.*/
+/*signin.html
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------*/
 .signup {
   width: 100%; height: 50%; margin: auto;
 }
+/*signup.html의 css 시작부분으로 form 태그의 스타일 설정. 너비는 100%, 높이는 전체의 50%, 좌우 마진은 1:1 균등분배.*/
 .signup #signuptable {
   height: 100%; margin: auto;
 }
+/*form 태그 내 가입 양식을 포함한 table 태그로 높이는 100%, 좌우 마진은 1:1 균등분배.*/
 .signup input[type=text], .signup input[type=password], .signup input[type=email], .signup input[type=date], .signup select{
   /*width: 400px; height: 40px;*/
   width: 100%; height: 100%;
   border: none;
   font-size: 100%; margin: 0.5%; display: block;
 }
+/*form 태그 내 input 태그의 스타일 설정. 너비와 높이는 부모 table의 너비 높이와 동일. 테두리 없애고, 글자크기는 부모 table의 크기와 동일. 상우하좌 마진은 0.5%.
+확인 및 취소 버튼과 다른 수평선상에 위치하기 위해 block 지정.*/
 .signup input[type=checkbox], label {
   height: 20px; font-size: 100%; background-color: white;
 }
+/*체크박스와 라벨은 따로 스타일 설정. 높이는 20px, 폰트 크기는 부모 table과 동일, 배경색은 white.*/
 .signup textarea {
   width: 400px; height: 150px; font-size: 20px; margin: 0.5%; display: block; resize: none;
 }
+/*자기소개의 내용이 필요한 testarea 태그의 스타일 설정. 너비는 400px, 높이는 150px, 폰트 크기는 20px, 상우하좌 마진은 0.5%, block 지정, 크기조절 불가능.*/
 .signup #favoriteinput {
   width: 4%;
 }
+/*각 체크박스의 너비는 부모 table 너비의 4%*/
+/*signup.html
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------*/
