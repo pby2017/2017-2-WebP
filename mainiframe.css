@@ -22,16 +22,13 @@ body {
 .tablediv #tableiniframe span {
   text-decoration: none;
   color : yellow;
-	text-shadow : 2px 2px 2px black,
-					0 0 25px blue, 0 0 5px darkblue;
+	text-shadow : 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 .tablediv span {
   color : white;
-	text-shadow : 2px 2px 2px black,
-					0 0 25px blue, 0 0 5px darkblue;
+	text-shadow : 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 .tablediv #tableiniframe a:hover {
   color : yellow;
-	text-shadow : 2px 2px 2px black,
-					0 0 25px blue, 0 0 5px darkblue;
+	text-shadow : 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
