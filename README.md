@@ -1,6 +1,6 @@
 # 2017-2-WebP
   
-git repository  
+Git repository  
 : https://github.com/pby2017  
   
 Project web page  
