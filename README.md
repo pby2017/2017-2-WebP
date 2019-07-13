@@ -2,8 +2,9 @@
   
 git repository  
 : https://github.com/pby2017  
+  
 Project web page  
 : https://pby2017.github.io/study-web-lesson.github.io/main.html  
   
-naver blog :  
+Naver blog :  
 https://blog.naver.com/qkrquddyd94
