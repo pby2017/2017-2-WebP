@@ -2,7 +2,7 @@
 
 git repository :
 -pby2017 : https://github.com/pby2017
--WebP : https://github.com/pby2017/study-web-lesson.github.io
+-WebP : https://pby2017.github.io/study-web-lesson.github.io/main.html
 
 naver blog :
 https://blog.naver.com/qkrquddyd94
